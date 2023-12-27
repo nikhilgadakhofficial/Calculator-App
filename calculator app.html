@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head><title>CSS</title>
+        <link rel="stylesheet" href="css.css" />
+    </head>
+           <h1 class="h1">Calculator </h1>
+            <div class="body">
+                <p class="brand">RTC</p>
+                <input type="text" class="screen" id="screen-id"/>
+                <div class="btn-conuter">
+
+                    <button class="btn" onclick="screenapp('1')">1</button>
+                    <button class="btn" onclick="screenapp('2')">2</button> 
+                    <button class="btn"  onclick="screenapp('3')">3</button> 
+                    <button class="btn style-btn"  onclick="screenapp('+')">+</button>
+                    <button class="btn "  onclick="screenapp('4')">4</button>
+                    <button class="btn"  onclick="screenapp('5')">5</button> 
+                    <button class="btn"  onclick="screenapp('6')">6</button> 
+                    <button class="btn style-btn"  onclick="screenapp('-')">-</button>
+                    <button class="btn"  onclick="screenapp('7')">7</button>
+                    <button class="btn"  onclick="screenapp('8')">8</button> 
+                    <button class="btn"  onclick="screenapp('9')">9</button> 
+                    <button class="btn style-btn"  onclick="screenapp('*')">*</button>
+                    <button class="btn style-btn"  onclick="screenapp('.')">.</button>
+                    <button class="btn"  onclick="screenapp('0')">0</button> 
+                    <button class="btn style-btn" onclick="calculator()">=</button> 
+                    <button class="btn style-btn"  onclick="screenapp('/')">/</button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function screenapp(num)
+            {
+                const calculator = document.getElementById("screen-id");
+                calculator.value += num;
+            }
+            function calculator()
+            {
+                const calculator = document.getElementById("screen-id");
+                calculator.value = eval(calculator.value);
+            }
+        </script>
+    </body>
+</html>
