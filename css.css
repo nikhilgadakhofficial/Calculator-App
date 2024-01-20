@@ -1,9 +1,10 @@
 .h1{
     text-align: center;
+    font-family: 'Courier New', Courier, monospace;
 
 }
 body{
-    background-color:lightcoral;
+   background-color: bisque;
     margin: 0px;
     padding:0px ;
 }
@@ -31,6 +32,8 @@ body{
     text-align: right;
     margin-right: 40px;
     margin-top: 40px;
+    padding: 10px;
+    color: #eaeaea;
 }
 .btn-conuter{
     margin-top: 20px;
